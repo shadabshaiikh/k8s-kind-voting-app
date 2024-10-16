@@ -144,16 +144,6 @@
 
 ---
 
-## 9. Argo CD Initial Admin Password
-
-- Retrieve Argo CD admin password:
-  ```bash
-  kubectl get secret -n argocd argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d && echo
-  ```
-
-
----
-
 ## 10. Install HELM
 
 ```bash
